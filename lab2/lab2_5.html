@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации пользователя</title>
+</head>
+<body>
+    <h1>Форма регистрации пользователя</h1>
+    <form method="post" action="#">
+        <p>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
+        </p>
+        <p>
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+        </p>
+        <p>
+            Пол
+            <input type="radio" id="gender_male" name="gender" value="male" checked>
+            <label for="gender_male">Мужчина</label>
+            <input type="radio" id="gender_female" name="gender" value="female">
+            <label for="gender_female">Женщина</label>
+        </p>
+        <p>
+            <label for="birth_year">Год рождения</label>
+            <select id="birth_year" name="birth_year">
+                <option value="1980">1980</option>
+                <option value="1981" selected>1981</option>
+                <option value="1982">1982</option>
+                <option value="1983">1983</option>
+                <option value="1984">1984</option>
+                <option value="1985">1985</option>
+                <!-- Можно добавить больше годов -->
+            </select> -й
+        </p>
+        <div>
+            <p>Я знаю</p>
+            <div>
+                <input type="checkbox" id="lang_russian" name="lang_russian" value="yes" checked disabled>
+                <label for="lang_russian">Русский</label>
+            </div>
+            <div>
+                <input type="checkbox" id="lang_spanish" name="lang_spanish" value="yes">
+                <label for="lang_spanish">Испанский</label>
+            </div>
+            <div>
+                <input type="checkbox" id="lang_german" name="lang_german" value="yes">
+                <label for="lang_german">Немецкий</label>
+            </div>
+            <div>
+                <input type="checkbox" id="lang_english" name="lang_english" value="yes">
+                <label for="lang_english">Английский</label>
+            </div>
+            <div>
+                <input type="checkbox" id="lang_chinese" name="lang_chinese" value="yes">
+                <label for="lang_chinese">Китайский</label>
+            </div>
+        </div>
+        <p>
+            <label for="about_me">Обо мне</label><br>
+            <textarea id="about_me" name="about_me" rows="5" cols="40" placeholder="Напишите коротко о себе"></textarea>
+        </p>
+        <p>
+            <button type="submit">Готово</button>
+            <button type="reset">Очистить</button>
+        </p>
+    </form>
+</body>
+</html>
