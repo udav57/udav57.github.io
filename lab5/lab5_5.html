@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Использование display:grid при построении колонок</title>
+    <style type="text/css">
+        body {
+            text-align: center;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 200px 600px 200px;
+            align-items: start;
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        #left,
+        #center,
+        #right {
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        #left {
+            background: #ccf;
+        }
+
+        #center {
+            background: #cfc;
+        }
+
+        #right {
+            background: #fcc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="left">left<br>left<br>left<br>left<br>left</div>
+        <div id="center">center text text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text text text text text text text text
+            text text text text text text text</div>
+        <div id="right">right<br>right<br>right<br>right</div>
+    </div>
+</body>
+
+</html>
